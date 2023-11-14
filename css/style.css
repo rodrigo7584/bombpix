@@ -21,7 +21,7 @@ button:hover {
   font-family: 'boldvan';
   src: url('../fonts/BoldenVan.ttf');
 }
-@font-face{
+@font-face {
   font-family: 'gothic';
   src: url('../fonts/franklin-gothic-demi.ttf');
 }
@@ -35,13 +35,12 @@ button:hover {
   --amarelo: #fadf07;
   --preto: #000000;
   --branco: #ffffff;
-
 }
 .container {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -85,7 +84,7 @@ button:hover {
 .accordion .answer.open {
   max-height: 800px;
 }
-.btn{
+.btn {
   font-family: var(--font-van);
   font-size: 2rem;
   text-transform: uppercase;
@@ -95,34 +94,57 @@ button:hover {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
-  padding: 1rem 3rem; 
+  padding: 1rem 3rem;
 
-  -webkit-text-stroke: 0.1rem  var(--preto);
+  -webkit-text-stroke: 0.1rem var(--preto);
   text-stroke: 0.1rem var(--preto);
-
 }
-.btn:hover{
+.btn:hover {
   filter: brightness(0.95);
   transform: scale(0.97);
   cursor: pointer;
 }
-.btn:active{
+.btn:active {
   filter: brightness(0.9);
   transform: scale(0.9);
 }
 
-.texto-sombreado{
+.texto-sombreado {
   color: var(--branco);
   font-family: var(--font-van);
   text-transform: uppercase;
   font-size: 8rem;
-  text-shadow: .4rem .4rem 0rem var(--preto);
+  text-shadow: 0.4rem 0.4rem 0rem var(--preto);
 }
+/* .bg_video {
+  right: 0;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  background-size: cover;
+  position: absolute;
+  overflow-y: hidden;
+  overflow-x: hidden;
+} */
+.section-bg-video {
+  position: relative;
+}
+.bg_video {
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  object-fit: fill;
+  position: absolute;
+}
+
 /*header*/
 section.main-menu {
   position: relative;
   z-index: 5;
-  background: var(--gray);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), transparent), url('../img/blocos.svg');
+  background-repeat: no-repeat, repeat-x;
+  background-size: 100% 100%, 100% auto;
 }
 header.menu {
   width: 100%;
@@ -133,9 +155,6 @@ header.menu {
   justify-content: space-between;
   align-items: center;
 }
-header.menu a.logo img {
-  height: 5rem;
-}
 header.menu nav ul {
   display: flex;
   gap: 4rem;
@@ -143,18 +162,14 @@ header.menu nav ul {
   align-items: center;
 }
 header.menu nav li a {
-  font-weight: var(--regular);
-  font-size: 1.5rem;
-  color: var(--light-gray);
-  padding: 0.5rem;
+  font-family: var(--font-got);
+  font-size: 2rem;
+  color: var(--branco);
+  text-transform: uppercase;
 }
-header.menu nav li a img {
-  height: 2.5rem;
-}
-header.menu nav li a.btn-purple-pink {
-  padding: 1rem 2rem;
-  font-weight: var(--semi-bold);
-  color: var(--white);
+header.menu nav li a:hover {
+  filter: brightness(0.95);
+  transform: scale(0.97);
 }
 header.menu .btn-mobile-menu {
   display: none;
@@ -162,7 +177,7 @@ header.menu .btn-mobile-menu {
 /*end header*/
 @media (max-width: 1400px) {
   .container {
-    max-width: 1100px;
+    max-width: 1200px;
   }
 }
 @media (max-width: 1200px) {
