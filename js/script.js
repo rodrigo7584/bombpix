@@ -26,3 +26,16 @@ accordion.forEach(item => {
     }
   })
 })
+
+const swiperHeroIndex = new Swiper('.swiper-gameplay .swiper', {
+  loop: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.swiper-gameplay .button-next',
+    prevEl: '.swiper-gameplay .button-prev'
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: true
+  }
+})

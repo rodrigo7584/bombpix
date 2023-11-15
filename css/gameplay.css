@@ -1,0 +1,50 @@
+.gameplay .conteudo{
+  width: 80rem;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.gameplay .swiper-gameplay {
+  display: grid;
+  grid-template-columns: 7rem calc(100% - 14rem) 7rem;
+  align-items: center;
+}
+.gameplay .swiper-gameplay .swiper{
+  width: 100%;
+}
+.gameplay .swiper-gameplay .swiper-conteudo{
+  border-radius: 3rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gameplay .swiper-gameplay .button-prev img{
+  transform: rotate(180deg);
+}
+.gameplay .swiper-gameplay .button-next img,
+.gameplay .swiper-gameplay .button-prev img{
+  width: 6rem;
+  margin: 0.5rem;
+}
+.gameplay .swiper-gameplay .button-next:hover,
+.gameplay .swiper-gameplay .button-prev:hover{
+  cursor: pointer;
+}
+.gameplay .swiper-gameplay .swiper-slide img,
+.gameplay .swiper-gameplay .swiper-slide video{
+max-width: 100%;
+}
+@media (max-width: 1200px) {
+  .gameplay .conteudo{
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .gameplay .swiper-gameplay {
+    grid-template-columns: 4rem calc(100% - 8rem) 4rem;
+  }
+.gameplay .swiper-gameplay .button-next img,
+.gameplay .swiper-gameplay .button-prev img{
+  width: 3rem;}
+}

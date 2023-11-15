@@ -1,0 +1,82 @@
+/*header*/
+section.main-menu {
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), transparent), url('../img/blocos.svg');
+  background-repeat: no-repeat, repeat-x;
+  background-size: 100% 100%, auto 100%;
+}
+header.menu {
+  width: 100%;
+  padding: 1.5rem 0;
+}
+header.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header.menu nav ul {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+  align-items: center;
+}
+header.menu nav li a {
+  font-family: var(--font-got);
+  font-size: 2rem;
+  color: var(--branco);
+  text-transform: uppercase;
+}
+header.menu nav li a:hover {
+  filter: brightness(0.95);
+  transform: scale(0.97);
+}
+header.menu .btn-mobile-menu {
+  display: none;
+}
+/*end header*/
+@media (max-width: 768px) {
+
+  /*header*/
+  .main-menu {
+    z-index: 20;
+  }
+  header.menu .btn-mobile-menu {
+    display: flex;    
+  }
+  header.menu .btn-mobile-menu.active img{
+    filter: brightness(0.90);
+    transform: scale(0.95);
+  }
+  header.menu .btn-mobile-menu img{
+    width: 5rem; 
+    height: 5rem;
+  }
+
+  header.menu nav ul {
+    display: block;
+    position: absolute;
+    /* width: 100%; */
+    top: 8rem;
+    left: 0;
+    height: 0;
+    transition: 0.3s all ease-in-out;
+    visibility: hidden;
+    overflow: hidden;
+    z-index: 99;
+    background: var(--verde);
+    border-radius: 0.5rem;
+    height: auto;
+    transform: scaleX(0);
+    transform-origin: top;
+  }
+
+  header.menu nav.active ul {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  header.menu nav li {
+    padding: 1rem 2rem;
+  }
+  /*end header*/
+}
