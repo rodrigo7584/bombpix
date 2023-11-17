@@ -39,3 +39,6 @@ const swiperHeroIndex = new Swiper('.swiper-gameplay .swiper', {
     disableOnInteraction: true
   }
 })
+
+const menuLogin = document.querySelectorAll('[data-menu-item]')
+console.log(menuLogin)
