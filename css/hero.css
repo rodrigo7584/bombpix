@@ -1,6 +1,6 @@
-.hero .conteudo{
+.hero .conteudo {
   padding-bottom: 20rem;
-  width:60rem ;
+  width: 60rem;
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -8,45 +8,32 @@
   align-items: center;
   gap: 2rem;
 }
-.hero .logo{
-  position: relative;
-  z-index: 10;
-  margin-top: -5rem;
-  width: 30rem;
-  height: auto;
-}
-.hero .texto-sombreado{
+.hero .texto-sombreado {
   font-size: 5rem;
   text-align: center;
 }
-.hero .social ul{
+.hero .social ul {
   display: flex;
   align-items: center;
   gap: 1.7rem;
 }
-.hero .social img{
+.hero .social img {
   width: 4rem;
   height: 4rem;
 }
-.hero .btn-play{
+.hero .btn-play {
   font-size: 3rem;
   padding-left: 5rem;
   padding-right: 5rem;
 }
 @media (max-width: 992px) {
-  .hero .conteudo{
-  padding: 5rem 0;
+  .hero .conteudo {
+    padding: 5rem 0;
   }
-  .hero .logo{
-    margin-top: 0rem;
-}
 }
 @media (max-width: 768px) {
   .hero .conteudo {
     width: 100%;
-  }
-  .hero .logo{
-    width: 22rem;
   }
   .hero .texto-sombreado {
     font-size: 4rem;

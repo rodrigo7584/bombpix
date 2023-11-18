@@ -5,6 +5,7 @@
 @import url('./faq.css');
 @import url('./footer.css');
 
+@import url('./login.css');
 body {
   background-color: var(--verde);
 }
@@ -76,7 +77,13 @@ button:hover {
   -webkit-text-stroke: 0.1rem var(--preto);
   text-stroke: 0.1rem var(--preto);
 }
-.btn:hover {
+.btn-link {
+  color: var(--branco);
+  font-family: var(--font-got);
+  font-size: 1.3rem;
+}
+.btn:hover,
+.btn-link:hover {
   filter: brightness(0.95);
   transform: scale(0.97);
   cursor: pointer;
@@ -108,6 +115,16 @@ button:hover {
   object-fit: fill;
   position: absolute;
 }
+.logo-topo {
+  z-index: 10;
+  margin-top: -5rem;
+  width: 30rem;
+  height: auto;
+}
+.logo-topo img {
+  width: 30rem;
+  height: auto;
+}
 @media (max-width: 1400px) {
   .container {
     max-width: 1200px;
@@ -122,10 +139,16 @@ button:hover {
   .container {
     max-width: 768px;
   }
+  .logo-topo {
+    margin-top: 0rem;
+  }
 }
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
+  }
+  .logo-topo {
+    width: 22rem;
   }
 }
 @media (max-width: 576px) {
@@ -137,34 +160,7 @@ button:hover {
     font-size: 3.5rem;
   }
 }
-.login .itens-login {
-  background: var(--verde);
-  border-radius: 2rem;
-  padding: 2rem;
-}
-.login .itens-login nav {
-  margin-bottom: 2rem;
-}
-.login .itens-login nav ul {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.5rem;
-  border-radius: 1rem;
-  padding: 1rem;
-  background: var(--preto-transparente);
-}
-.login .itens-login nav button {
-  border-radius: 1rem;
-  padding: 1rem;
-  font-family: var(--font-got);
-  color: var(--branco);
-  text-transform: uppercase;
-}
-.login .itens-login nav button.ativo,
-.login .itens-login nav button:hover {
-  cursor: pointer;
-  background: var(--preto-transparente);
-}
+
 /*
 @media (max-width: 1400px) {
 }
