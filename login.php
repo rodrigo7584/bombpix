@@ -1,5 +1,5 @@
 <?php include './header.php';?>
-<main id="main-login">
+<main id="login">
   <section class="login section-bg-video">
     <div class="row">
       <video muted autoplay loop class="bg_video">

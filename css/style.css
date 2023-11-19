@@ -115,13 +115,10 @@ button:hover {
   object-fit: fill;
   position: absolute;
 }
-.logo-topo {
+
+.logo-topo img {
   z-index: 10;
   margin-top: -5rem;
-  width: 30rem;
-  height: auto;
-}
-.logo-topo img {
   width: 30rem;
   height: auto;
 }
@@ -139,7 +136,7 @@ button:hover {
   .container {
     max-width: 768px;
   }
-  .logo-topo {
+  .logo-topo img{
     margin-top: 0rem;
   }
 }
@@ -147,7 +144,7 @@ button:hover {
   .container {
     max-width: 576px;
   }
-  .logo-topo {
+  .logo-topo img{
     width: 22rem;
   }
 }

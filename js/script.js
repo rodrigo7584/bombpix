@@ -39,26 +39,35 @@ const swiperHeroIndex = new Swiper('.swiper-gameplay .swiper', {
     disableOnInteraction: true
   }
 })
+const tela = document.querySelector('main')
 
-const menuLogin = document.querySelectorAll('[data-menu-login]')
-const conteudosLogin = document.querySelectorAll('[data-conteudo-login]')
-menuLogin[0].classList.add('ativo')
-conteudosLogin[0].classList.add('ativo')
+if (tela.id == 'login') {
+  console.log(tela.id)
+}
+function initLogin() {
+  if (tela.id == 'login') {
+    const menuLogin = document.querySelectorAll('[data-menu-login]')
+    const conteudosLogin = document.querySelectorAll('[data-conteudo-login]')
+    menuLogin[0].classList.add('ativo')
+    conteudosLogin[0].classList.add('ativo')
 
-menuLogin.forEach(item => {
-  item.addEventListener('click', () => {
-    menuLogin.forEach(itens => {
-      itens.classList.remove('ativo')
+    menuLogin.forEach(item => {
+      item.addEventListener('click', () => {
+        menuLogin.forEach(itens => {
+          itens.classList.remove('ativo')
+        })
+        item.classList.add('ativo')
+
+        const itemMenuSelecionado = item.dataset.menuLogin
+        conteudosLogin.forEach(conteudo => {
+          conteudo.classList.remove('ativo')
+        })
+        const itemSelecionado = document.querySelector(
+          `[data-conteudo-login=${itemMenuSelecionado}]`
+        )
+        itemSelecionado.classList.add('ativo')
+      })
     })
-    item.classList.add('ativo')
-
-    const itemMenuSelecionado = item.dataset.menuLogin
-    conteudosLogin.forEach(conteudo => {
-      conteudo.classList.remove('ativo')
-    })
-    const itemSelecionado = document.querySelector(`[data-conteudo-login=${itemMenuSelecionado}]`)
-    itemSelecionado.classList.add('ativo')
-  })
-})
-
-const teste = document.querySelector('[data-menu-item]')
+  }
+}
+initLogin()

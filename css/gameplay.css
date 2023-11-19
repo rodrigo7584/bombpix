@@ -1,7 +1,25 @@
+.gameplay{
+  background: url(../img/nuvem-1.svg), url(../img/nuvem-1.svg), url(../img/nuvem-2.svg), url(../img/nuvem-2.svg),linear-gradient(180deg,#484aff 30%,#6ccaf3 70%);
+  background-repeat: no-repeat;
+  background-size: 23%, 20%, 14%, 15%, 100% 100%;
+  background-position: 100% 14%, 20% 93%, 6% 12%, 95% 78%, 0% 0%;
+  padding: 8rem 0;
+  animation: teste 15s ease-in-out infinite;
+}
+@keyframes teste {
+  0%{
+    background-position: 100% 14%, 20% 93%, 6% 12%, 95% 78%, 0% 0%;
+  }
+  50%{
+    background-position: 110% 14%, 12% 93%, 12% 12%, 83% 78%, 0% 0%;
+  }
+  100%{
+    background-position: 100% 14%, 20% 93%, 6% 12%, 95% 78%, 0% 0%;
+  }
+}
 .gameplay .conteudo{
   width: 80rem;
   margin: 0 auto;
-  padding: 5rem 0;
 }
 
 .gameplay .swiper-gameplay {
@@ -41,10 +59,14 @@ max-width: 100%;
   }
 }
 @media (max-width: 576px) {
+  .gameplay{
+    background-size: 38%, 35%, 29%, 30%, 100% 100%;
+  }
   .gameplay .swiper-gameplay {
     grid-template-columns: 4rem calc(100% - 8rem) 4rem;
   }
 .gameplay .swiper-gameplay .button-next img,
 .gameplay .swiper-gameplay .button-prev img{
   width: 3rem;}
+  
 }
