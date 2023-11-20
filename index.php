@@ -53,7 +53,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-conteudo">
-                    <video controls src="./video/bg-o.mp4"></video>
+                    <video controls src="./video/bg.mp4"></video>
                   </div>
                 </div>
               </div>
