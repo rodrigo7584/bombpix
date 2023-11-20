@@ -16,7 +16,6 @@ accordion.forEach(item => {
   answer.style.maxHeight = 0
 
   question.addEventListener('click', () => {
-    // answer.classList.toggle('open')
     if (item.classList.contains('open')) {
       answer.style.maxHeight = 0
       item.classList.remove('open')
@@ -77,9 +76,16 @@ window.addEventListener('resize', () => {
 
 function applyBGTopo(fundo) {
   if (window.innerWidth <= 768) {
-    fundo.src = './video/bg-topo-mobile.mp4'
+    fundo.src = './video/bg-topo-mobile-o.mp4'
   } else {
-    fundo.src = './video/bg-topo.mp4'
+    fundo.src = './video/bg-topo-o.mp4'
   }
 }
 applyBGTopo(bg_topo)
+
+document.onreadystatechange = function () {
+  if (document.readyState === 'complete') {
+    // Quando a página estiver totalmente carregada, esconde o loader
+    document.querySelector('.loader-wrapper').style.display = 'none'
+  }
+}

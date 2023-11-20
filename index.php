@@ -2,7 +2,7 @@
 <main id="principal">
   <section class="hero section-bg-video" id="hero">
     <video muted autoplay loop class="bg_video bg_video_topo">
-      <source src="./video/bg-topo.mp4" type="video/mp4" />
+      <source src="./video/bg-topo-o.mp4" type="video/mp4" />
     </video>
     <div class="container">
       <div class="row">
@@ -53,7 +53,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-conteudo">
-                    <video controls src="./video/bg.mp4"></video>
+                    <video controls src="./video/bg-o.mp4"></video>
                   </div>
                 </div>
               </div>
@@ -68,7 +68,7 @@
   </section>
   <section class="chars section-bg-video" id="chars">
     <video muted autoplay loop class="bg_video">
-      <source src="./video/bg-chars.mp4" type="video/mp4" />
+      <source src="./video/bg-chars-o.mp4" type="video/mp4" />
     </video>
     <div class="container">
       <div class="row">

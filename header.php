@@ -13,6 +13,10 @@
 </head>
 
 <body>
+  <div class="loader-wrapper">
+    <img src="./img/logo-loader.png" alt="">
+    <div class="loader"></div>
+  </div>
   <section class="main-menu">
     <div class="container">
       <div class="row">

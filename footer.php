@@ -3,7 +3,9 @@
     <div class="row">
       <div class="conteudo">
         <div class="area-logo">
-          <img src="./img/logo.png" alt="" class="logo" />
+          <a href="index.php">
+            <img src="./img/logo.png" alt="" class="logo" />
+          </a>
           <div class="social">
             <ul>
               <li>
