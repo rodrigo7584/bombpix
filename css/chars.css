@@ -5,11 +5,10 @@
 .chars .box-chars img {
   max-height: 30rem;
 }
-.chars .box-chars a {
+.chars .box-chars .char {
   position: absolute;
   filter: grayscale(1) blur(1px);
 }
-
 .chars .box-chars .bruxa {
   left: 30%;
   transform: translateX(-30%) scale(0.8);
@@ -40,7 +39,7 @@
   top: -8%;
   z-index: 48;
 }
-.chars .box-chars a:hover {
+.chars .box-chars .char:hover {
   filter: grayscale(0) blur(0);
   cursor: pointer;
 }
@@ -68,7 +67,7 @@
   }
 }
 @media (max-width: 768px) {
-  .chars .box-chars a {
+  .chars .box-chars .char {
     position: absolute;
     filter: grayscale(0) blur(0);
   }

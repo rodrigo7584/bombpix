@@ -48,7 +48,8 @@ button:hover {
   --font-got: 'gothic';
 
   --amarelo: #fadf07;
-  --verde: #6cb844;
+  --verde: #90bf21;
+  --verde-escuro: #72b32c;
   --preto: #000000;
   --branco: #ffffff;
 
@@ -136,7 +137,7 @@ button:hover {
   .container {
     max-width: 768px;
   }
-  .logo-topo img{
+  .logo-topo img {
     margin-top: 0rem;
   }
 }
@@ -144,7 +145,7 @@ button:hover {
   .container {
     max-width: 576px;
   }
-  .logo-topo img{
+  .logo-topo img {
     width: 22rem;
   }
 }

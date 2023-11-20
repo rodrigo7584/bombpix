@@ -39,11 +39,12 @@ const swiperHeroIndex = new Swiper('.swiper-gameplay .swiper', {
     disableOnInteraction: true
   }
 })
+
+const chars = document.querySelectorAll('.chars .char')
+console.log(chars)
+
 const tela = document.querySelector('main')
 
-if (tela.id == 'login') {
-  console.log(tela.id)
-}
 function initLogin() {
   if (tela.id == 'login') {
     const menuLogin = document.querySelectorAll('[data-menu-login]')
@@ -71,3 +72,18 @@ function initLogin() {
   }
 }
 initLogin()
+
+const bg_topo = document.querySelector('.bg_video_topo')
+window.addEventListener('resize', () => {
+  applyBGTopo(bg_topo)
+})
+
+function applyBGTopo(fundo) {
+  if (window.innerWidth <= 768) {
+    fundo.src = './video/bg-topo-mobile.mp4'
+  } else {
+    fundo.src = './video/bg-topo.mp4'
+  }
+}
+
+applyBGTopo(bg_topo)

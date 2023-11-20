@@ -1,3 +1,6 @@
+.login {
+  min-height: 90vh;
+}
 .login .conteudo {
   position: relative;
   display: flex;
@@ -16,11 +19,12 @@
 }
 .login .itens-login nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 0.5rem;
   border-radius: 1rem;
   padding: 1rem;
   background: var(--preto-transparente);
+  flex-wrap: wrap;
 }
 .login .itens-login nav button {
   border-radius: 1rem;
@@ -63,6 +67,7 @@
   color: var(--branco);
   font-family: var(--font-got);
   font-size: 1.5rem;
+  width: 100%;
 }
 .login .item-conteudo-login .form-login input::placeholder {
   color: var(--branco);
@@ -74,4 +79,18 @@
 }
 .login .item-conteudo-login .form-login {
   text-align: center;
+}
+@media (max-width: 768px) {
+  .login {
+    padding-bottom: 15rem;
+  }
+  .login .item-conteudo-login .form-login {
+    width: 100%;
+  }
+  .login .itens-login {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+@media (max-width: 576px) {
 }

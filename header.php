@@ -22,9 +22,9 @@
               <img src="./img/btn-mobile.png" alt="" />
             </button>
             <ul>
-              <li><a href="#">CHARACTERS</a></li>
-              <li><a href="#">Gameplay</a></li>
-              <li><a href="#">FAQ</a></li>
+              <li><a href="index.php#chars">CHARACTERS</a></li>
+              <li><a href="index.php#gameplay">Gameplay</a></li>
+              <li><a href="index.php#faq">FAQ</a></li>
             </ul>
           </nav>
           <a href="./login.php" class="btn">Login</a>

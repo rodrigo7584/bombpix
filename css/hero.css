@@ -32,6 +32,9 @@
   }
 }
 @media (max-width: 768px) {
+  .hero {
+    padding-bottom: 20rem;
+  }
   .hero .conteudo {
     width: 100%;
   }

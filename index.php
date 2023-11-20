@@ -1,8 +1,8 @@
 <?php include './header.php';?>
 <main id="principal">
   <section class="hero section-bg-video" id="hero">
-    <video muted autoplay loop class="bg_video">
-      <source src="./video/teste.mp4" type="video/mp4" />
+    <video muted autoplay loop class="bg_video bg_video_topo">
+      <source src="./video/bg-topo.mp4" type="video/mp4" />
     </video>
     <div class="container">
       <div class="row">
@@ -35,7 +35,7 @@
       </div>
     </div>
   </section>
-  <section class="gameplay">
+  <section class="gameplay" id="gameplay">
     <div class="container">
       <div class="row">
         <div class="conteudo">
@@ -66,37 +66,40 @@
       </div>
     </div>
   </section>
-  <section class="chars">
+  <section class="chars" id="chars">
     <div class="container">
       <div class="row">
         <div class="conteudo">
           <h2 class="texto-sombreado titulo-sessao">Characters</h2>
           <div class="box-chars">
-            <a class="bruxa">
+            <div class="char bruxa">
               <img src="./img/bruxa.png" alt="" />
-            </a>
-            <a class="guerreiro">
+            </div>
+            <div class="char guerreiro">
               <img src="./img/guerreiro.png" alt="" />
-            </a>
-            <a class="aventureiro">
+            </div>
+            <div class="char aventureiro">
               <img src="./img/aventureiro.png" alt="" />
-            </a>
-            <a class="jogador">
+            </div>
+            <div class="char jogador">
               <img src="./img/jogador.png" alt="" />
-            </a>
-            <a class="ninja">
+            </div>
+            <div class="char ninja">
               <img src="./img/ninja.png" alt="" />
-            </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="faq">
+  <section class="faq" id="faq">
+    <img class="bomba" src="./video/explosao.gif" alt="">
+    <img class="bomba-2" src="./video/explosao.gif" alt="">
     <div class="container">
       <div class="row">
         <div class="conteudo">
           <h2 class="texto-sombreado titulo-sessao">FAQ</h2>
+          <?php for($i=0;$i<=5;$i++){?>
           <div class="accordion" data-aos="fade-right">
             <div class="question">
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
@@ -113,6 +116,7 @@
               </div>
             </div>
           </div>
+          <?php }; ?>
         </div>
       </div>
     </div>

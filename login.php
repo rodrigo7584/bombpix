@@ -2,8 +2,8 @@
 <main id="login">
   <section class="login section-bg-video">
     <div class="row">
-      <video muted autoplay loop class="bg_video">
-        <source src="./video/teste.mp4" type="video/mp4" />
+      <video muted autoplay loop class="bg_video bg_video_topo">
+        <source src="./video/bg-topo.mp4" type="video/mp4" />
       </video>
       <div class="container">
         <div class="conteudo">
