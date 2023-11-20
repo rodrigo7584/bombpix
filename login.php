@@ -40,9 +40,15 @@
                   <a href="#" class="btn-link btn-signup">sign-up</a>
                 </form>
               </div>
-              <div class="item-conteudo" data-conteudo-login="deposito">deposito</div>
-              <div class="item-conteudo" data-conteudo-login="saque">saque</div>
-              <div class="item-conteudo" data-conteudo-login="informativos">informativos</div>
+              <div class="item-conteudo" data-conteudo-login="deposito">
+                <h2 class="texto-sombreado">deposito</h2>
+              </div>
+              <div class="item-conteudo" data-conteudo-login="saque">
+                <h2 class="texto-sombreado">saque</h2>
+              </div>
+              <div class="item-conteudo" data-conteudo-login="informativos">
+                <h2 class="texto-sombreado">informativos</h2>
+              </div>
             </div>
           </div>
         </div>
