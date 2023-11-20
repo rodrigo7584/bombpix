@@ -40,9 +40,6 @@ const swiperHeroIndex = new Swiper('.swiper-gameplay .swiper', {
   }
 })
 
-const chars = document.querySelectorAll('.chars .char')
-console.log(chars)
-
 const tela = document.querySelector('main')
 
 function initLogin() {
@@ -85,5 +82,4 @@ function applyBGTopo(fundo) {
     fundo.src = './video/bg-topo.mp4'
   }
 }
-
 applyBGTopo(bg_topo)

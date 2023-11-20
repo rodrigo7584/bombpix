@@ -66,7 +66,10 @@
       </div>
     </div>
   </section>
-  <section class="chars" id="chars">
+  <section class="chars section-bg-video" id="chars">
+    <video muted autoplay loop class="bg_video">
+      <source src="./video/bg-chars.mp4" type="video/mp4" />
+    </video>
     <div class="container">
       <div class="row">
         <div class="conteudo">

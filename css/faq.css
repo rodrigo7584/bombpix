@@ -1,5 +1,5 @@
 .faq {
-  padding: 10rem 0;
+  padding: 4rem 0;
   position: relative;
   max-width: 100%;
   overflow-x: hidden;
@@ -7,6 +7,9 @@
   background: url('../img/bg-grama.svg');
   background-size: 100% auto;
   background-repeat: repeat-y;
+  z-index: 3;
+  background-color: var(--verde);
+  margin-top: -0.3rem;
 }
 .faq img.bomba {
   position: absolute;
