@@ -74,7 +74,7 @@
       <div class="row">
         <div class="conteudo">
           <h2 class="texto-sombreado titulo-sessao">Characters</h2>
-          <div class="box-chars">
+          <div class="box-chars" data-aos="zoom-in">
             <div class="char bruxa">
               <img src="./img/bruxa.png" alt="" />
             </div>
