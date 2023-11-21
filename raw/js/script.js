@@ -89,3 +89,5 @@ document.onreadystatechange = function () {
     document.querySelector('.loader-wrapper').style.display = 'none'
   }
 }
+
+AOS.init()

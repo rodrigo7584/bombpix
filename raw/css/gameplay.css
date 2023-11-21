@@ -44,6 +44,38 @@
 }
 .gameplay .swiper-gameplay .button-prev img {
   transform: rotate(180deg);
+  animation: buttonPrev 1s ease-in-out infinite;
+}
+.gameplay .swiper-gameplay .button-next img {
+  animation: buttonNext 1s ease-in-out infinite;
+}
+@keyframes buttonPrev {
+  0%{
+    transform: rotate(180deg) translateX(-0rem);
+  }
+  30%{
+    transform: rotate(180deg) translateX(0.5rem);
+  }
+  60%{
+    transform: rotate(180deg) translateX(0.5rem);
+  }
+  100%{
+    transform: rotate(180deg) translateX(0rem);
+  }
+}
+@keyframes buttonNext {
+  0%{
+    transform: rotate(0deg) translateX(-0rem);
+  }
+  30%{
+    transform: rotate(0deg) translateX(0.5rem);
+  }
+  60%{
+    transform: rotate(0deg) translateX(0.5rem);
+  }
+  100%{
+    transform: rotate(0deg) translateX(0rem);
+  }
 }
 .gameplay .swiper-gameplay .button-next img,
 .gameplay .swiper-gameplay .button-prev img {
