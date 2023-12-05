@@ -12,7 +12,6 @@ accordion.forEach(item => {
   const question = item.querySelector('.question')
   const answer = item.querySelector('.answer')
 
-  const answerHeight = answer.scrollHeight
   answer.style.maxHeight = 0
 
   question.addEventListener('click', () => {
@@ -20,7 +19,8 @@ accordion.forEach(item => {
       answer.style.maxHeight = 0
       item.classList.remove('open')
     } else {
-      answer.style.maxHeight = answerHeight + 'px'
+      answer.style.maxHeight =
+        answer.querySelector('.content').scrollHeight + 'px'
       item.classList.add('open')
     }
   })

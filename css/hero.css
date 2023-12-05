@@ -12,6 +12,13 @@
   font-size: 5rem;
   text-align: center;
 }
+.hero p{
+  font-family: var(--font-got);
+  text-transform: uppercase;
+  color: var(--branco);
+  font-size: 1.7rem;
+  text-align: center;
+}
 .hero .social ul {
   display: flex;
   align-items: center;
@@ -40,5 +47,8 @@
   }
   .hero .texto-sombreado {
     font-size: 4rem;
+  }
+  .hero p{
+    font-size: 1.3rem;
   }
 }

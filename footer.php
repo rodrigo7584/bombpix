@@ -9,18 +9,18 @@
           <div class="social">
             <ul>
               <li>
-                <a href="#">
-                  <img src="./img/discord.svg" alt="" />
+                <a href="tel:11974313640">
+                  <img src="./img/telefone.svg" alt="" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="./img/telegram.svg" alt="" />
+                  <img src="./img/whatsapp.svg" alt="" />
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <img src="./img/twitter.svg" alt="" />
+                <a href="https://www.instagram.com/b0mbpix/">
+                  <img src="./img/instagram.svg" alt="" />
                 </a>
               </li>
             </ul>
@@ -29,13 +29,13 @@
         <nav>
           <ul>
             <li>
-              <a href="#">Characters</a>
+              <a href="index.php#chars">Characters</a>
             </li>
             <li>
-              <a href="#">gameplay</a>
+              <a href="index.php#gameplay">gameplay</a>
             </li>
             <li>
-              <a href="#">faq</a>
+              <a href="index.php#faq">faq</a>
             </li>
           </ul>
         </nav>

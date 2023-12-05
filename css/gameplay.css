@@ -1,6 +1,6 @@
 .gameplay {
   background: url(../img/nuvem-1.svg), url(../img/nuvem-1.svg), url(../img/nuvem-2.svg),
-    url(../img/nuvem-2.svg), linear-gradient(180deg, #484aff 30%, #79d4f1 70%);
+    url(../img/nuvem-2.svg), linear-gradient(180deg, #484aff 30%, #7ed5ee 70%);
   background-repeat: no-repeat;
   background-size: 23%, 20%, 14%, 15%, 100% 100%;
   background-position: 100% 14%, 20% 93%, 6% 12%, 95% 78%, 0% 0%;
@@ -50,30 +50,30 @@
   animation: buttonNext 1s ease-in-out infinite;
 }
 @keyframes buttonPrev {
-  0%{
+  0% {
     transform: rotate(180deg) translateX(-0rem);
   }
-  30%{
+  30% {
     transform: rotate(180deg) translateX(0.5rem);
   }
-  60%{
+  60% {
     transform: rotate(180deg) translateX(0.5rem);
   }
-  100%{
+  100% {
     transform: rotate(180deg) translateX(0rem);
   }
 }
 @keyframes buttonNext {
-  0%{
+  0% {
     transform: rotate(0deg) translateX(-0rem);
   }
-  30%{
+  30% {
     transform: rotate(0deg) translateX(0.5rem);
   }
-  60%{
+  60% {
     transform: rotate(0deg) translateX(0.5rem);
   }
-  100%{
+  100% {
     transform: rotate(0deg) translateX(0rem);
   }
 }

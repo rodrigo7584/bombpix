@@ -34,7 +34,7 @@
               <li><a href="index.php#faq">FAQ</a></li>
             </ul>
           </nav>
-          <a href="./login.php" class="btn">Login</a>
+          <a href="https://marketplace.bombpix.net/login" class="btn">Login</a>
         </header>
       </div>
     </div>

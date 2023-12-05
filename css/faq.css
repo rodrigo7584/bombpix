@@ -8,7 +8,7 @@
   background-size: 100% auto;
   background-repeat: repeat-y;
   z-index: 3;
-  background-color: #95d100;
+  background-color: #91d407;
   margin-top: -0.3rem;
 }
 .faq img.bomba {
@@ -52,16 +52,16 @@
   animation: faqSubindo 1s ease-in-out infinite;
 }
 @keyframes faqSubindo {
-  0%{
+  0% {
     transform: rotate(180deg) translateY(-0rem);
   }
-  30%{
+  30% {
     transform: rotate(180deg) translateY(-0.5rem);
   }
-  60%{
+  60% {
     transform: rotate(180deg) translateY(-0.5rem);
   }
-  100%{
+  100% {
     transform: rotate(180deg) translateY(0rem);
   }
 }
@@ -70,16 +70,16 @@
   animation: faqDescendo 1s ease-in-out infinite;
 }
 @keyframes faqDescendo {
-  0%{
+  0% {
     transform: rotate(0deg) translateY(-0rem);
   }
-  30%{
+  30% {
     transform: rotate(0deg) translateY(-0.5rem);
   }
-  60%{
+  60% {
     transform: rotate(0deg) translateY(-0.5rem);
   }
-  100%{
+  100% {
     transform: rotate(0deg) translateY(0rem);
   }
 }
