@@ -14,7 +14,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://wa.me/5511974313640?text=ol%C3%A1%2C+tenho+uma+d%C3%BAvida+sobre+o+bombpix">
                   <img src="./img/whatsapp.svg" alt="" />
                 </a>
               </li>
