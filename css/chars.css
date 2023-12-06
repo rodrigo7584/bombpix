@@ -58,6 +58,56 @@
   transform: scale(1.5) translateX(-50%);
   z-index: 52;
 }
+.chars dialog.dialog-modal {
+  background: url(../img/blocos.svg), url(../img/grama.svg),
+    linear-gradient(180deg, #484aff 30%, #1f9bbd 70%);
+  background-repeat: repeat-x, repeat-x, no-repeat;
+  background-size: auto 9rem, auto 3rem, 100% 100%;
+  background-position: 0% 0%, 0% 100%, center;
+  padding: 2rem 3rem 3.5rem 3rem;
+}
+.chars dialog .container-char {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.chars dialog .char-content {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+.chars dialog .texto-sombreado {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.chars dialog .char-content h4 {
+  font-family: var(--font-got);
+  font-size: 2.5rem;
+  color: var(--branco);
+  margin-bottom: 1.2rem;
+}
+.chars dialog .char-content p {
+  font-family: var(--font-got);
+  font-size: 1.6rem;
+  color: var(--branco);
+}
+.chars dialog .char-content img {
+  max-width: 100%;
+}
+.chars dialog ::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.chars dialog {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 @media (max-width: 1200px) {
   .chars .box-chars .bruxa {
     left: 20%;
@@ -123,6 +173,25 @@
     position: relative;
     height: 23rem;
     margin-top: 10rem;
+  }
+  .chars dialog .texto-sombreado {
+    font-size: 3rem;
+  }
+  .chars dialog .char-content {
+    grid-template-columns: 6rem 1fr;
+  }
+  .chars dialog .char-content h4 {
+    font-size: 1.6rem;
+  }
+  .chars dialog .char-content p {
+    font-size: 1.2rem;
+  }
+  dialog.dialog-modal {
+    padding: 1.5rem;
+  }
+
+  .chars dialog.dialog-modal {
+    background-size: auto 7rem, auto 3rem, 100% 100%;
   }
 }
 @media (max-width: 400px) {

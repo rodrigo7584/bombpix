@@ -67,6 +67,114 @@
       </div>
     </div>
   </section>
+  <?php 
+    $personagens =[
+      [
+        'id'=>'bruxa',
+        'nome'=>'BRUXA ESTUDANTE',
+        'descricao'=>'- Veste um vestido de estudante com símbolos mágicos e um
+        chapéu pontudo. <br>
+        - Carrega bombas encantadas e utiliza um grimório como
+        detonador.<br>
+        - Habilidade única: "Conjuração Explosiva" - as explosões
+        desencadeiam efeitos mágicos adicionais, ampliando os
+        ganhos.',
+        'imagem'=>'Bruxa_01.png',
+
+        'nome_evolucao'=>'BRUXA ACADÊMICA',
+        'descricao_evolucao'=> '- Veste um vestido elegante com detalhes ricos em runas
+        mágicas.
+        - Carrega bombas de artefato mágico e utiliza um cajado
+        encantado como detonador.
+        - Habilidade única: "Artefatos Ancestrais" - as explosões liberam
+        poderes mágicos antigos, concedendo benefícios estratégicos.',
+        'imagem_evolucao'=>'Bruxa_02.png',
+      ],
+      [
+        'id'=>'guerreiro',
+        'nome'=>'CAVALEIRO APRENDIZ',
+        'descricao'=> '- Veste uma armadura reluzente com detalhes explosivos
+        incorporado.<br>
+        - Carrega bombas de escudo e utiliza uma lança como
+        detonador.<br>
+        - Habilidade única: "Código Explosivo" - as explosões geram
+        escudos temporários, conferindo resistência estratégica.',
+        'imagem'=>'Guerreiro_01.png',
+
+        'nome_evolucao'=>'CAVALEIRO LENDÁRIO',
+        'descricao_evolucao'=> '- Veste uma armadura imponente adornada com runas
+        ancestrais de explosão.<br>
+        - Carrega bombas divinas e utiliza uma espada sagrada como
+        detonador.<br>
+        - Habilidade única: "Fúria Celestial" - as explosões invocam
+        poderes divinos, ampliando as capacidades ofensivas e
+        defensivas.
+        ',
+        'imagem_evolucao'=>'Guerreiro_02.png',
+      ],
+      [
+        'id'=>'aventureiro',
+        'nome'=>'COWBOY ERRANTE',
+        'descricao'=> '- Um pistoleiro solitário cujo caminho é marcado por explosões e
+        aventuras.<br>
+        - Equipado com bombas temáticas de faroeste e um chapéu de
+        caubói desgastado.<br>
+        - Habilidade única: "Desert Mirage" - cria ilusões de explosões,
+        confundindo os adversários e aumentando os ganhos.',
+        'imagem'=>'Cowboy_01.png',
+
+        'nome_evolucao'=>'COWBOY JUSTICEIRO',
+        'descricao_evolucao'=> '- Um aventureiro solitário, vestido com um chapéu de abas
+        largas e um poncho empoeirado.<br>
+        - Carrega bombas estilo bolas de fumaça e usa um detonador de
+        aspecto vintage.<br>
+        - Habilidade única: "Rodeo Ricochet" - as bombas podem ser
+        direcionadas em um movimento rápido, causando estragos
+        estratégicos e gerando grandes lucros.',
+        'imagem_evolucao'=>'Cowboy_02.png',
+      ],
+      [
+        'id'=>'jogador',
+        'nome'=>'JOGADOR VÁRZEA',
+        'descricao'=> '- Um amante do futebol de rua, vestindo uma camisa surrada de
+        time local e chuteiras gastas.<BR>
+        - Carrega bombas feitas com objetos inusitados, como bolas de
+        futebol recheadas de explosivos.<BR>
+        - Habilidade única: "Gol de placa" - as explosões criam obstáculos
+        temporários que dificultam a movimentação dos oponentes.',
+        'imagem'=>'Jogador_01.png',
+
+        'nome_evolucao'=>'JOGADOR PROFISSIONAL',
+        'descricao_evolucao'=> '- Vestido com um uniforme esportivo de alta tecnologia e
+        equipamento de última geração.<BR>
+        - Carrega bombas de precisão e usa um detonador sofisticado.<BR>
+        - Habilidade única: "Tática Avançada" - permite ao jogador traçar a
+        trajetória das explosões para otimizar os ganhos.',
+        'imagem_evolucao'=>'Jogador_02.png',
+      ],
+      [
+        'id'=>'ninja',
+        'nome'=>'NINJA DESAFIANTE',
+        'descricao'=> '- Veste um traje azul tradicional.<br>
+        - Carrega bombas shuriken e usa um detonador silencioso.<br>
+        - Habilidade única: "Furtividade Explosiva" - as explosões não
+        revelam a posição do Ninja Desafiante, proporcionando uma
+        vantagem tática.
+        ',
+        'imagem'=>'Ninja_01.png',
+
+        'nome_evolucao'=>'NINJA ESPECIALISTA',
+        'descricao_evolucao'=> '- Veste um traje ninja moderno, combinando tecnologia
+        avançada com tradição.<br>
+        - Carrega bombas de fumaça aprimoradas e utiliza um detonador
+        camuflado.<br>
+        - Habilidade única: "Sombra Estratégica" - permite ao Ninja
+        Profissional manipular as sombras para criar ilusões e confundir
+        os oponentes.',
+        'imagem_evolucao'=>'Ninja_02.png',
+      ]
+      ]
+  ?>
   <section class="chars section-bg-video" id="chars">
     <video muted autoplay loop class="bg_video">
       <source src="./video/bg-chars-o.mp4" type="video/mp4" />
@@ -76,26 +184,86 @@
         <div class="conteudo">
           <h2 class="texto-sombreado titulo-sessao">Characters</h2>
           <div class="box-chars" data-aos="zoom-in">
-            <div class="char bruxa">
-              <img src="./img/bruxa.png" alt="" />
+            <?php foreach($personagens as $personagem){?>
+            <div class="char <?php echo $personagem['id']?>"
+              data-button-modal="modal-personagem-<?php echo $personagem['id']?>">
+              <img src="./img/<?php echo $personagem['id']?>.png" alt="" />
             </div>
-            <div class="char guerreiro">
-              <img src="./img/guerreiro.png" alt="" />
-            </div>
-            <div class="char aventureiro">
-              <img src="./img/aventureiro.png" alt="" />
-            </div>
-            <div class="char jogador">
-              <img src="./img/jogador.png" alt="" />
-            </div>
-            <div class="char ninja">
-              <img src="./img/ninja.png" alt="" />
-            </div>
+            <?php };?>
           </div>
         </div>
       </div>
     </div>
+    <?php foreach ($personagens as $personagem){?>
+    <dialog class="dialog-modal" data-dialog-modal="modal-personagem-<?php echo $personagem['id']?>">
+      <div class="dialog-content">
+        <h1 class="texto-sombreado"><?php echo $personagem['id']?></h1>
+        <div class="container-char">
+          <div class="char-content">
+            <img src="./img/<?php echo $personagem['imagem']?>" alt="">
+            <div>
+              <h4><?php echo $personagem['nome']?></h4>
+              <p class="description">
+                <?php echo $personagem['descricao']?>
+              </p>
+            </div>
+
+          </div>
+          <div class="char-content">
+            <img src="./img/<?php echo $personagem['imagem_evolucao']?>" alt="">
+            <div>
+              <h4><?php echo $personagem['nome_evolucao']?></h4>
+              <p class="description">
+                <?php echo $personagem['descricao_evolucao']?>
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <button class="dialog-close" data-dialog-modal="modal-close"></button>
+      </div>
+    </dialog>
+    <?php }?>
+    <!-- <dialog class="dialog-modal fade-in" data-dialog-modal="modal-personagem-1" open>
+      <div class="dialog-content">
+        <h3 class="dialog-title">
+          <h1 class="texto-sombreado">Cavaleiro</h1>
+        </h3>
+        <div class="container-char">
+          <div class="char-content">
+            <img src="./img/Bruxa_01.png" alt="">
+            <div>
+              <h4>NINJA DESAFIANTE</h4>
+              <p class="description">
+                - Veste um traje azul tradicional.<br>
+                - Carrega bombas shuriken e usa um detonador silencioso.<br>
+                - Habilidade única: "Furtividade Explosiva" - as explosões não
+                revelam a posição do Ninja Desafiante, proporcionando uma
+                vantagem tática.
+              </p>
+            </div>
+
+          </div>
+          <div class="char-content">
+            <img src="./img/Bruxa_01.png" alt="">
+            <div>
+              <h4>NINJA DESAFIANTE</h4>
+              <p class="description">
+                - Veste um traje azul tradicional.<br>
+                - Carrega bombas shuriken e usa um detonador silencioso.<br>
+                - Habilidade única: "Furtividade Explosiva" - as explosões não
+                revelam a posição do Ninja Desafiante, proporcionando uma
+                vantagem tática.
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <button class="dialog-close" data-dialog-modal="modal-close"></button>
+      </div>
+    </dialog> -->
   </section>
+
   <section class="faq" id="faq">
     <?php
      $perguntas =[

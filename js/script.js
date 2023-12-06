@@ -19,8 +19,7 @@ accordion.forEach(item => {
       answer.style.maxHeight = 0
       item.classList.remove('open')
     } else {
-      answer.style.maxHeight =
-        answer.querySelector('.content').scrollHeight + 'px'
+      answer.style.maxHeight = answer.querySelector('.content').scrollHeight + 'px'
       item.classList.add('open')
     }
   })
@@ -91,3 +90,49 @@ document.onreadystatechange = function () {
 }
 
 AOS.init()
+
+/*MODAL DIALOG */
+function initModalDialog() {
+  const modalButtons = document.querySelectorAll('[data-button-modal]')
+
+  if (modalButtons.length) {
+    modalButtons.forEach(button => {
+      const modal = document.querySelector(`[data-dialog-modal="${button.dataset.buttonModal}"]`)
+
+      button.addEventListener('click', () => {
+        modal.classList.add('fade-in')
+        modal.showModal()
+      })
+
+      function fadeOut() {
+        modal.classList.add('fade-out')
+        setTimeout(() => {
+          modal.close()
+          modal.classList.remove('fade-out')
+        }, 1000 * 0.3)
+      }
+
+      const buttonsClose = modal.querySelectorAll('[data-dialog-modal="modal-close"]')
+      buttonsClose.forEach(buttonClose => {
+        buttonClose.addEventListener('click', () => {
+          fadeOut()
+        })
+      })
+
+      modal.addEventListener('click', e => {
+        const modalDimensions = modal.getBoundingClientRect()
+        if (
+          e.clientX < modalDimensions.left ||
+          e.clientX > modalDimensions.right ||
+          e.clientY < modalDimensions.top ||
+          e.clientY > modalDimensions.bottom
+        ) {
+          fadeOut()
+        }
+      })
+    })
+  }
+}
+initModalDialog()
+
+/*END MODAL DIALOG */
